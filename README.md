@@ -1,5 +1,5 @@
 # Discover Salone
-
+Live Site: https://papahp.github.io/DCOMP204_Assignment2_Discover_Salone_PETER_VANDI_BASSIE_95006490/index.html
 A responsive, multi-page tourism website for Sierra Leone. Visitors can compare beaches, wildlife and history sites, check sample trip prices, read directions and reviews, and send an enquiry to local guides and hotels.
 
 **Module:** DCOMP 204 Web Design
@@ -180,36 +180,9 @@ Extra screenshots: `index-mobile-menu-open.png` (mobile menu) and `destinations-
 
 ---
 
-## 9. Notes and limits
-
-- **Sample content.** Prices, reviews, phone numbers and the email address are made up for this student project. Each page says so in the top bar.
-- **Images.** The photos are in colour. Each one is saved in two sizes (`name-sm.jpg` about 600px wide and `name-lg.jpg` about 1200px wide, where the original is large enough) and the HTML uses `srcset` and `sizes`, so phones download the small file. To make every photo black and white, open `css/style.css`, find the commented rule `.card-img, .detail-img { filter: grayscale(1); }` and remove the comment marks.
-- **Photo credits.** The photos were supplied by the student from public web sources. Credits printed on some of them (Artemy Lebedev, Big World Small Pockets) are kept. Check the licence of each photo before the site goes public.
-- **Team photo.** `images/avatar.svg` is a placeholder. Replace it with a portrait of the student.
-- **Forms.** There is no server, so a valid form shows a confirmation message and does not send data.
-- **Maps.** The map blocks are drawn with CSS. A real map embed can replace them later.
-- **Design colours.** The site stays black and white, as the lecturer required for this module.
-
----
-
-## 10. Upload to GitHub
-
-```bash
-cd discover-salone-website
-git remote add origin https://github.com/YOUR-USERNAME/discover-salone.git
-git branch -M main
-git push -u origin main
-```
-
-Create the empty repository on github.com first (no README, no .gitignore), then paste its address in place of the one above.
-
-To publish the site for free, open the repository on GitHub, go to Settings, then Pages, choose the `main` branch and the root folder, and save. GitHub shows the live address after a minute.
-
----
-
-## 11. Credits
+## 9. Credits
 
 - Design, research and code: Peter Vandi Bassie
 - Design brief and examiner: Mr. Amadu Kamara, Limkokwing University of Creative Technology, Sierra Leone
 - Tourism figure: the source is named on the About page
-- Photos: supplied by the student, see the photo credits note in section 9
+- Photos: Sourced by me through google research.
