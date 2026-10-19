@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Discover Salone</title>
+  <meta name="description" content="Plan your trip to Sierra Leone with real prices, maps and reviews. Compare beaches, wildlife and history sites.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="notice">Student project: prices, reviews and listings are sample content</div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Discover Salone</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a class="nav-link" href="index.html" aria-current="page">Home</a><a class="nav-link" href="destinations.html">Destinations</a><a class="nav-link" href="services.html">Services</a><a class="nav-link" href="about.html">About</a><a class="nav-link" href="contact.html">Contact</a>
+        <a class="btn btn-light btn-sm" href="destinations.html">Find a destination</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero"><div class="wrap hero-grid">
+      <div>
+        <h1>Plan your trip to Sierra Leone with real prices, maps and reviews</h1>
+        <p class="lead">Compare beaches, wildlife and history sites, check what a trip costs, and contact verified guides and hotels directly.</p>
+        <div class="hero-links"><a class="btn btn-light" href="destinations.html">Find a destination</a><a class="btn btn-ghost" href="services.html">Find a guide</a></div>
+      </div>
+      <form class="finder" action="destinations.html" method="get" aria-labelledby="finder-title">
+        <h2 id="finder-title">Destination finder</h2>
+        <p>Choose what matters and see matching places.</p>
+        <label for="f-region">Region</label>
+        <select id="f-region" name="region"><option value="">Any region</option><option>Western Area</option><option>Southern</option><option>Northern</option><option>Eastern</option></select>
+        <label for="f-activity">Activity</label>
+        <select id="f-activity" name="activity"><option value="">Any activity</option><option>Beach</option><option>Wildlife</option><option>History</option><option>Hiking</option></select>
+        <label for="f-budget">Budget per person</label>
+        <select id="f-budget" name="budget"><option value="">Any budget</option><option value="under">Under NLe 200</option><option value="mid">NLe 200 to 500</option><option value="over">Over NLe 500</option></select>
+        <button class="btn btn-dark btn-full" type="submit">Show destinations</button>
+      </form>
+    </div></section>
+
+    <section class="section"><div class="wrap">
+      <div class="section-head"><h2>What do you need to plan?</h2></div>
+      <div class="grid-3">
+        <a class="quick" href="destinations.html"><h3>Find a destination</h3><p>Filter places by region, activity and budget, with maps and directions.</p><span>Browse destinations</span></a>
+        <a class="quick" href="services.html#guides"><h3>Find a guide</h3><p>Contact verified tour guides and operators directly.</p><span>See guides and tours</span></a>
+        <a class="quick" href="services.html#stay"><h3>Find a place to stay</h3><p>Compare guesthouses and hotels with prices and recent reviews.</p><span>See places to stay</span></a>
+      </div>
+    </div></section>
+
+    <section class="section section-alt"><div class="wrap">
+      <div class="section-head"><h2>Popular destinations</h2><p>Prices are estimates per person and show the date they were last checked.</p></div>
+      <div class="cards cards-3">
+        <article class="card" data-region="Western Area" data-activities="beach" data-low="150" data-high="300" data-name="Tokeh Beach">
+            <img class="card-img" src="images/tokeh-beach-sm.jpg" srcset="images/tokeh-beach-sm.jpg 600w, images/tokeh-beach-lg.jpg 1200w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 45vw, 92vw" width="1200" height="800" loading="lazy" alt="Aerial view of Tokeh Beach with white sand, turquoise sea and rows of beach chairs">
+            <h3>Tokeh Beach</h3>
+            <div class="tags"><span class="tag">Western Area</span><span class="tag">Beach</span></div>
+            <p class="price">Sample price: NLe 150 to 300 per person</p>
+            <p class="muted">Updated Sep 2026</p>
+            <a class="btn btn-outline btn-sm" href="destinations/tokeh-beach.html">View details<span class="visually-hidden"> for Tokeh Beach</span></a>
+          </article>
+<article class="card" data-region="Western Area" data-activities="wildlife" data-low="200" data-high="350" data-name="Tacugama Chimpanzee Sanctuary">
+            <img class="card-img" src="images/tacugama-chimpanzee-sanctuary-sm.jpg" srcset="images/tacugama-chimpanzee-sanctuary-sm.jpg 500w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 45vw, 92vw" width="500" height="333" loading="lazy" alt="A chimpanzee with its mouth open at Tacugama sanctuary">
+            <h3>Tacugama Chimpanzee Sanctuary</h3>
+            <div class="tags"><span class="tag">Western Area</span><span class="tag">Wildlife</span></div>
+            <p class="price">Sample price: NLe 200 to 350 per person</p>
+            <p class="muted">Updated Sep 2026</p>
+            <a class="btn btn-outline btn-sm" href="destinations/tacugama-chimpanzee-sanctuary.html">View details<span class="visually-hidden"> for Tacugama Chimpanzee Sanctuary</span></a>
+          </article>
+<article class="card" data-region="Southern" data-activities="wildlife hiking" data-low="500" data-high="900" data-name="Tiwai Island">
+            <img class="card-img" src="images/tiwai-island-sm.jpg" srcset="images/tiwai-island-sm.jpg 600w, images/tiwai-island-lg.jpg 1000w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 45vw, 92vw" width="1000" height="666" loading="lazy" alt="Calm river reflecting clouds and forest on both banks near Tiwai Island">
+            <h3>Tiwai Island</h3>
+            <div class="tags"><span class="tag">Southern</span><span class="tag">Wildlife and hiking</span></div>
+            <p class="price">Sample price: NLe 500 to 900 per person</p>
+            <p class="muted">Updated Jul 2026</p>
+            <a class="btn btn-outline btn-sm" href="destinations/tiwai-island.html">View details<span class="visually-hidden"> for Tiwai Island</span></a>
+          </article>
+      </div>
+      <p style="margin-top:28px"><a class="btn btn-outline" href="destinations.html">See all destinations</a></p>
+    </div></section>
+
+    <section class="section"><div class="wrap">
+      <div class="section-head"><h2>Information you can rely on</h2></div>
+      <div class="trust">
+        <div><h3>Updated regularly</h3><p>Every page shows when its prices and details were last checked.</p></div>
+        <div><h3>Reviews from visitors</h3><p>Ratings and comments come from people who have been there.</p></div>
+        <div><h3>Verified businesses</h3><p>Hotels, guides and operators are checked for working contact details.</p></div>
+      </div>
+    </div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div><h2>Discover Salone</h2><p>Trip planning for Sierra Leone with prices, maps and reviews in one place.</p></div>
+        <div><h2>Explore</h2><a href="destinations.html">Destinations</a><a href="services.html">Guides and tours</a><a href="services.html">Places to stay</a></div>
+        <div><h2>Company</h2><a href="about.html">About us</a><a href="about.html#verify">How we verify</a><a href="contact.html">Contact</a></div>
+        <div><h2>Contact</h2><p>hello@discoversalone.example</p><p>+232 00 000 000</p><p>Instagram | Facebook | TikTok</p></div>
+      </div>
+      <p class="footer-note">All listings are checked for working contact details before they appear. Student project for DCOMP 204 Web Design.</p>
+    </div>
+  </footer>
+</body>
+</html>

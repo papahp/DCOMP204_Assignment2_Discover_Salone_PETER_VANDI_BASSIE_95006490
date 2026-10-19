@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Destinations | Discover Salone</title>
+  <meta name="description" content="Browse beaches, wildlife and history sites in Sierra Leone. Filter by region, activity and budget.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script><script src="js/destinations.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="notice">Student project: prices, reviews and listings are sample content</div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Discover Salone</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a class="nav-link" href="index.html">Home</a><a class="nav-link" href="destinations.html" aria-current="page">Destinations</a><a class="nav-link" href="services.html">Services</a><a class="nav-link" href="about.html">About</a><a class="nav-link" href="contact.html">Contact</a>
+        <a class="btn btn-light btn-sm" href="destinations.html">Find a destination</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-head"><div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a> &gt; Destinations</p>
+      <h1>Destinations</h1>
+      <p>Filter by region, activity and budget to find places that fit your trip.</p>
+    </div></section>
+    <section class="section"><div class="wrap list-layout">
+      <form class="filters" id="filter-form" aria-label="Filter destinations">
+        <h2>Filter</h2>
+        <fieldset><legend>Region</legend><label class="check"><input type="checkbox" name="region" value="Western Area"> Western Area</label><label class="check"><input type="checkbox" name="region" value="Southern"> Southern</label><label class="check"><input type="checkbox" name="region" value="Northern"> Northern</label><label class="check"><input type="checkbox" name="region" value="Eastern"> Eastern</label></fieldset>
+        <fieldset><legend>Activity</legend><label class="check"><input type="checkbox" name="activity" value="Beach"> Beach</label><label class="check"><input type="checkbox" name="activity" value="Wildlife"> Wildlife</label><label class="check"><input type="checkbox" name="activity" value="History"> History</label><label class="check"><input type="checkbox" name="activity" value="Hiking"> Hiking</label></fieldset>
+        <label for="budget">Budget per person</label>
+        <select id="budget" name="budget"><option value="">Any budget</option><option value="under">Under NLe 200</option><option value="mid">NLe 200 to 500</option><option value="over">Over NLe 500</option></select>
+        <button class="btn btn-dark btn-full" type="submit">Apply filters</button>
+        <button class="btn btn-outline btn-full" type="reset">Clear filters</button>
+      </form>
+      <div>
+        <div class="results-bar">
+          <p><strong id="result-count" aria-live="polite">6 destinations</strong></p>
+          <label for="sort">Sort by
+            <select id="sort"><option value="low">Lowest price</option><option value="high">Highest price</option><option value="name">Name A to Z</option></select>
+          </label>
+        </div>
+        <div class="cards" id="results">
+          <article class="card" data-region="Western Area" data-activities="beach" data-low="150" data-high="300" data-name="Tokeh Beach">
+            <img class="card-img" src="images/tokeh-beach-sm.jpg" srcset="images/tokeh-beach-sm.jpg 600w, images/tokeh-beach-lg.jpg 1200w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 45vw, 92vw" width="1200" height="800" loading="lazy" alt="Aerial view of Tokeh Beach with white sand, turquoise sea and rows of beach chairs">
+            <h3>Tokeh Beach</h3>
+            <div class="tags"><span class="tag">Western Area</span><span class="tag">Beach</span></div>
+            <p class="price">Sample price: NLe 150 to 300 per person</p>
+            <p class="muted">Updated Sep 2026</p>
+            <a class="btn btn-outline btn-sm" href="destinations/tokeh-beach.html">View details<span class="visually-hidden"> for Tokeh Beach</span></a>
+          </article>
+<article class="card" data-region="Western Area" data-activities="beach" data-low="100" data-high="250" data-name="River No. 2 Beach">
+            <img class="card-img" src="images/river-no-2-beach-sm.jpg" srcset="images/river-no-2-beach-sm.jpg 502w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 45vw, 92vw" width="502" height="335" loading="lazy" alt="Aerial view of a river meeting the sea at River No. 2 Beach">
+            <h3>River No. 2 Beach</h3>
+            <div class="tags"><span class="tag">Western Area</span><span class="tag">Beach</span></div>
+            <p class="price">Sample price: NLe 100 to 250 per person</p>
+            <p class="muted">Updated Sep 2026</p>
+            <a class="btn btn-outline btn-sm" href="destinations/river-no-2-beach.html">View details<span class="visually-hidden"> for River No. 2 Beach</span></a>
+          </article>
+<article class="card" data-region="Western Area" data-activities="beach" data-low="120" data-high="280" data-name="Bureh Beach">
+            <img class="card-img" src="images/bureh-beach-sm.jpg" srcset="images/bureh-beach-sm.jpg 600w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 45vw, 92vw" width="600" height="400" loading="lazy" alt="Aerial view of a beach with a jetty, rocks and turquoise water">
+            <h3>Bureh Beach</h3>
+            <div class="tags"><span class="tag">Western Area</span><span class="tag">Beach and surfing</span></div>
+            <p class="price">Sample price: NLe 120 to 280 per person</p>
+            <p class="muted">Updated Aug 2026</p>
+            <a class="btn btn-outline btn-sm" href="destinations/bureh-beach.html">View details<span class="visually-hidden"> for Bureh Beach</span></a>
+          </article>
+<article class="card" data-region="Western Area" data-activities="wildlife" data-low="200" data-high="350" data-name="Tacugama Chimpanzee Sanctuary">
+            <img class="card-img" src="images/tacugama-chimpanzee-sanctuary-sm.jpg" srcset="images/tacugama-chimpanzee-sanctuary-sm.jpg 500w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 45vw, 92vw" width="500" height="333" loading="lazy" alt="A chimpanzee with its mouth open at Tacugama sanctuary">
+            <h3>Tacugama Chimpanzee Sanctuary</h3>
+            <div class="tags"><span class="tag">Western Area</span><span class="tag">Wildlife</span></div>
+            <p class="price">Sample price: NLe 200 to 350 per person</p>
+            <p class="muted">Updated Sep 2026</p>
+            <a class="btn btn-outline btn-sm" href="destinations/tacugama-chimpanzee-sanctuary.html">View details<span class="visually-hidden"> for Tacugama Chimpanzee Sanctuary</span></a>
+          </article>
+<article class="card" data-region="Western Area" data-activities="history beach" data-low="300" data-high="600" data-name="Banana Islands">
+            <img class="card-img" src="images/banana-islands-sm.jpg" srcset="images/banana-islands-sm.jpg 600w, images/banana-islands-lg.jpg 1200w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 45vw, 92vw" width="1200" height="800" loading="lazy" alt="Rocky shore with old concrete posts in the sea under shady trees">
+            <h3>Banana Islands</h3>
+            <div class="tags"><span class="tag">Western Area</span><span class="tag">Island and history</span></div>
+            <p class="price">Sample price: NLe 300 to 600 per person</p>
+            <p class="muted">Updated Aug 2026</p>
+            <a class="btn btn-outline btn-sm" href="destinations/banana-islands.html">View details<span class="visually-hidden"> for Banana Islands</span></a>
+          </article>
+<article class="card" data-region="Southern" data-activities="wildlife hiking" data-low="500" data-high="900" data-name="Tiwai Island">
+            <img class="card-img" src="images/tiwai-island-sm.jpg" srcset="images/tiwai-island-sm.jpg 600w, images/tiwai-island-lg.jpg 1000w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 45vw, 92vw" width="1000" height="666" loading="lazy" alt="Calm river reflecting clouds and forest on both banks near Tiwai Island">
+            <h3>Tiwai Island</h3>
+            <div class="tags"><span class="tag">Southern</span><span class="tag">Wildlife and hiking</span></div>
+            <p class="price">Sample price: NLe 500 to 900 per person</p>
+            <p class="muted">Updated Jul 2026</p>
+            <a class="btn btn-outline btn-sm" href="destinations/tiwai-island.html">View details<span class="visually-hidden"> for Tiwai Island</span></a>
+          </article>
+        </div>
+        <p class="no-results" id="no-results" hidden>No destinations match these filters. Try clearing one of them.</p>
+      </div>
+    </div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div><h2>Discover Salone</h2><p>Trip planning for Sierra Leone with prices, maps and reviews in one place.</p></div>
+        <div><h2>Explore</h2><a href="destinations.html">Destinations</a><a href="services.html">Guides and tours</a><a href="services.html">Places to stay</a></div>
+        <div><h2>Company</h2><a href="about.html">About us</a><a href="about.html#verify">How we verify</a><a href="contact.html">Contact</a></div>
+        <div><h2>Contact</h2><p>hello@discoversalone.example</p><p>+232 00 000 000</p><p>Instagram | Facebook | TikTok</p></div>
+      </div>
+      <p class="footer-note">All listings are checked for working contact details before they appear. Student project for DCOMP 204 Web Design.</p>
+    </div>
+  </footer>
+</body>
+</html>
