@@ -6,6 +6,7 @@
   <title>Contact | Discover Salone</title>
   <meta name="description" content="Send a trip enquiry, ask a question, or tell us about a business that should be listed.">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -13,7 +14,7 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Discover Salone</a>
-      <label class="menu-btn"><input class="menu-toggle visually-hidden" type="checkbox" aria-label="Open or close the menu"><span class="menu-text"></span></label>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Main">
         <a class="nav-link" href="index.html">Home</a><a class="nav-link" href="destinations.html">Destinations</a><a class="nav-link" href="services.html">Services</a><a class="nav-link" href="about.html">About</a><a class="nav-link" href="contact.html" aria-current="page">Contact</a>
         <a class="btn btn-light btn-sm" href="destinations.html">Find a destination</a>
@@ -30,24 +31,27 @@
       <div class="info">
         <h2>Get in touch</h2>
         <p><strong>Email</strong><br>hello@discoversalone.example</p>
-        <p><strong>Phone and WhatsApp</strong><br>+232 00 000 000</p>
+        <p><strong>Phone and WhatsApp</strong><br>+232 32 355 424</p>
         <p><strong>Replies</strong><br>Within 48 hours on weekdays</p>
         <p><strong>Social media</strong><br>Instagram | Facebook | TikTok</p>
         <div class="map" role="img" aria-label="Map: Freetown office" style="margin-top:22px"><span class="pin"></span><span class="map-label">Map: Freetown office</span></div>
       </div>
       <div class="enquiry">
         <h2>Send a message</h2>
-        <form action="#sent" method="get">
+        <form data-validate novalidate data-success="Thank you. Your message was received. We reply within 48 hours.">
           <label for="name">Full name</label>
-          <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required aria-describedby="name-error">
+          <p class="field-error" id="name-error" aria-live="polite"></p>
           <label for="contact">Email or phone</label>
-          <input id="contact" name="contact" type="text" autocomplete="email" placeholder="Where should we reply?" required pattern="[^\s@]+@[^\s@]+\.[^\s@]+|[+\(\)\d\s\-]{7,}" title="Enter an email address or a phone number">
+          <input id="contact" name="contact" type="text" data-kind="contact" autocomplete="email" placeholder="Where should we reply?" required aria-describedby="contact-error">
+          <p class="field-error" id="contact-error" aria-live="polite"></p>
           <label for="topic">Topic</label>
           <select id="topic" name="topic"><option>Trip enquiry</option><option>List my business</option><option>Report wrong information</option></select>
           <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="How can we help?" required minlength="10"></textarea>
+          <textarea id="message" name="message" placeholder="How can we help?" required minlength="10" aria-describedby="message-error"></textarea>
+          <p class="field-error" id="message-error" aria-live="polite"></p>
           <button class="btn btn-dark btn-full" type="submit" style="margin-top:18px">Send message</button>
-          <p class="form-status" id="sent" role="status">Thank you. Your message was received. We reply within 48 hours.</p>
+          <p class="form-status" role="status" hidden></p>
         </form>
       </div>
     </div></section>
