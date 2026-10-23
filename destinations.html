@@ -6,7 +6,6 @@
   <title>Destinations | Discover Salone</title>
   <meta name="description" content="Browse beaches, wildlife and history sites in Sierra Leone. Filter by region, activity and budget.">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script><script src="js/destinations.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -14,7 +13,7 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Discover Salone</a>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <label class="menu-btn"><input class="menu-toggle visually-hidden" type="checkbox" aria-label="Open or close the menu"><span class="menu-text"></span></label>
       <nav id="site-nav" class="site-nav" aria-label="Main">
         <a class="nav-link" href="index.html">Home</a><a class="nav-link" href="destinations.html" aria-current="page">Destinations</a><a class="nav-link" href="services.html">Services</a><a class="nav-link" href="about.html">About</a><a class="nav-link" href="contact.html">Contact</a>
         <a class="btn btn-light btn-sm" href="destinations.html">Find a destination</a>
@@ -34,16 +33,18 @@
         <fieldset><legend>Activity</legend><label class="check"><input type="checkbox" name="activity" value="Beach"> Beach</label><label class="check"><input type="checkbox" name="activity" value="Wildlife"> Wildlife</label><label class="check"><input type="checkbox" name="activity" value="History"> History</label><label class="check"><input type="checkbox" name="activity" value="Hiking"> Hiking</label></fieldset>
         <label for="budget">Budget per person</label>
         <select id="budget" name="budget"><option value="">Any budget</option><option value="under">Under NLe 200</option><option value="mid">NLe 200 to 500</option><option value="over">Over NLe 500</option></select>
-        <button class="btn btn-dark btn-full" type="submit">Apply filters</button>
         <button class="btn btn-outline btn-full" type="reset">Clear filters</button>
       </form>
-      <div>
-        <div class="results-bar">
-          <p><strong id="result-count" aria-live="polite">6 destinations</strong></p>
-          <label for="sort">Sort by
-            <select id="sort"><option value="low">Lowest price</option><option value="high">Highest price</option><option value="name">Name A to Z</option></select>
-          </label>
-        </div>
+      <div class="results-col">
+        <p class="preset-note" id="show-beach">Showing Beach destinations. <a href="destinations.html">Show all destinations</a></p>
+        <p class="preset-note" id="show-wildlife">Showing Wildlife destinations. <a href="destinations.html">Show all destinations</a></p>
+        <p class="preset-note" id="show-history">Showing History destinations. <a href="destinations.html">Show all destinations</a></p>
+        <p class="preset-note" id="show-hiking">Showing Hiking destinations. <a href="destinations.html">Show all destinations</a></p>
+        <p class="preset-note" id="show-western">Showing destinations in the Western Area. <a href="destinations.html">Show all destinations</a></p>
+        <p class="preset-note" id="show-southern">Showing destinations in the Southern region. <a href="destinations.html">Show all destinations</a></p>
+        <p class="preset-note" id="show-under">Showing destinations under NLe 200 per person. <a href="destinations.html">Show all destinations</a></p>
+        <p class="preset-note" id="show-mid">Showing destinations from NLe 200 to 500 per person. <a href="destinations.html">Show all destinations</a></p>
+        <p class="preset-note" id="show-over">Showing destinations over NLe 500 per person. <a href="destinations.html">Show all destinations</a></p>
         <div class="cards" id="results">
           <article class="card" data-region="Western Area" data-activities="beach" data-low="150" data-high="300" data-name="Tokeh Beach">
             <img class="card-img" src="images/tokeh-beach-sm.jpg" srcset="images/tokeh-beach-sm.jpg 600w, images/tokeh-beach-lg.jpg 1200w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 45vw, 92vw" width="1200" height="800" loading="lazy" alt="Aerial view of Tokeh Beach with white sand, turquoise sea and rows of beach chairs">
@@ -94,7 +95,8 @@
             <a class="btn btn-outline btn-sm" href="destinations/tiwai-island.html">View details<span class="visually-hidden"> for Tiwai Island</span></a>
           </article>
         </div>
-        <p class="no-results" id="no-results" hidden>No destinations match these filters. Try clearing one of them.</p>
+        <p class="results-count" aria-hidden="true"></p>
+        <p class="results-hint muted">Nothing showing? Clear a filter to see more destinations.</p>
       </div>
     </div></section>
   </main>
@@ -104,7 +106,7 @@
         <div><h2>Discover Salone</h2><p>Trip planning for Sierra Leone with prices, maps and reviews in one place.</p></div>
         <div><h2>Explore</h2><a href="destinations.html">Destinations</a><a href="services.html">Guides and tours</a><a href="services.html">Places to stay</a></div>
         <div><h2>Company</h2><a href="about.html">About us</a><a href="about.html#verify">How we verify</a><a href="contact.html">Contact</a></div>
-        <div><h2>Contact</h2><p>hello@discoversalone.example</p><p>+232 00 000 000</p><p>Instagram | Facebook | TikTok</p></div>
+        <div><h2>Contact</h2><p>hello@discoversalone.example</p><p>+232 32 355 424</p><p>Instagram | Facebook | TikTok</p></div>
       </div>
       <p class="footer-note">All listings are checked for working contact details before they appear. Student project for DCOMP 204 Web Design.</p>
     </div>
